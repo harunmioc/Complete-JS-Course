@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1> Pig Game - Rules 🎲🐷</h1>
+      <br>
+      <p>
+        <h3>Objective</h3>
+    <p>Be the first player to reach <strong>100 points</strong> by rolling a dice and deciding when to hold.</p>
+        <br><br>
+    <h3>How to Play</h3>
+    <br>
+    <ol>
+        <li><strong>Roll the Die:</strong> 
+            <ul>
+                <li>If you roll <strong>2-6</strong>, the number is added to your <em>round score</em>.</li>
+                <li>If you roll <strong>1</strong>, you lose your round score and your turn ends.</li>
+            </ul>
+        </li>
+        <br>
+        <li><strong>Choose an Action:</strong> 
+            <ul>
+                <li><strong>Roll Again</strong> Keep rolling to increase your round score.</li>
+                <li><strong>Hold</strong> Add your round score to your total score and end your turn.</li>
+            </ul>
+        </li>
+        <br>
+        <li><strong>Winning the Game:</strong> The first player to reach or exceed <strong>100 points</strong> wins!</li>
+    </ol>
+    <p>Good luck, and may the luckiest pig win! 🐽🎉</p>
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--rules">📃 Rules</button>
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
